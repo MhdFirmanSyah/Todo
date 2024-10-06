@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Todo</h1>
+      <h1>Note</h1>
+    </nav>
+
+    <!-- Container input todo -->
+    <section class="container">
+      <h3>Tambah yang harus dilakukan</h3>
+
+      <form action="">
+        <label class="label-input" for="todo"
+          >Masukkan hal yang akan dilakukan</label
+        >
+        <input class="input-node" type="text" name="todo" id="todo" />
+        <label class="label-input" for="date"
+          >Masukkan tanggal harus selesai</label
+        >
+        <input class="input-node" type="date" name="date" id="date" />
+
+        <label class="select" for="mode">Select Mode</label>
+        <select name="mode" id="mode">
+          <option value="todo">Add Todo</option>
+          <option value="note">Add Note</option>
+        </select>
+        <div class="sub-cover">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </section>
+
+    <!-- List todo yang belum selesai -->
+    <section class="list-proses">
+      <h1>Yang harus dilakukan</h1>
+
+      <div>
+        <h1 class="node-list">example</h1>
+        <p class="date">2/2/2/2</p>
+        <input type="checkbox" name="selesai" id="" />
+      </div>
+    </section>
+
+    <!-- List todo yang sudah selesai -->
+    <section class="list-selesai">
+      <h1>Yang sudah dilakukan</h1>
+
+      <div>
+        <h1 class="node-list">example</h1>
+        <p class="date">3/3/3/</p>
+      </div>
+      <div class="side-list">
+        <button class="hapus">hapus</button>
+        <button class="ulangi">ulangi</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
