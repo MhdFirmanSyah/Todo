@@ -13,7 +13,6 @@
       <h1>Todo</h1>
       <h1>Note</h1>
     </nav>
-
     <!-- Container input todo -->
     <section class="container">
       <h3>Tambah yang harus dilakukan</h3>
@@ -23,47 +22,54 @@
           >Masukkan hal yang akan dilakukan</label
         >
         <input class="input-node" type="text" name="todo" id="todo" />
+        <!-- input todo -->
         <label class="label-input" for="date"
           >Masukkan tanggal harus selesai</label
         >
         <input class="input-node" type="date" name="date" id="date" />
+        <!-- input date todo -->
 
         <label class="select" for="mode">Select Mode</label>
-        <select name="mode" id="mode">
-          <option value="todo">Add Todo</option>
-          <option value="note">Add Note</option>
+        <select
+          onchange="selectMode()"
+          class="select-mode"
+          name="mode"
+          id="mode">
+          <!-- select mode -->
+          <option value="todo">Todo</option>
+          <option value="note">Note</option>
         </select>
+
         <div class="sub-cover">
           <input type="submit" value="Submit" />
         </div>
+        <!-- submit  -->
       </form>
     </section>
 
-    <!-- List todo yang belum selesai -->
-    <section class="list-proses">
-      <h1>Yang harus dilakukan</h1>
+    <div class="container">
+      <!-- List todo yang belum selesai -->
+      <h1 class="title">Yang harus dilakukan</h1>
+      <section class="list-proses"></section>
 
-      <div>
-        <h1 class="node-list">example</h1>
-        <p class="date">2/2/2/2</p>
-        <input type="checkbox" name="selesai" id="" />
-      </div>
-    </section>
+      <!-- <div class="list-pr"> -->
+      <!-- <div> -->
+      <!-- <h1 class="node-list">example</h1> -->
+      <!-- todo -->
+      <!-- <p class="date">10/10/2020</p> -->
+      <!--date todo  -->
+      <!-- </div> -->
 
-    <!-- List todo yang sudah selesai -->
-    <section class="list-selesai">
-      <h1>Yang sudah dilakukan</h1>
+      <!-- <img src="img//done.png" id="done" alt="" /> -->
+      <!-- inisialisasi todo ke done section -->
+      <!--  masukkan tugas ke selesai -->
+      <!-- </div> -->
 
-      <div>
-        <h1 class="node-list">example</h1>
-        <p class="date">3/3/3/</p>
-      </div>
-      <div class="side-list">
-        <button class="hapus">hapus</button>
-        <button class="ulangi">ulangi</button>
-      </div>
-    </section>
+      <!-- List todo yang sudah selesai -->
+      <h1 class="title">Yang sudah dilakukan</h1>
+      <section class="list-selesai"></section>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
